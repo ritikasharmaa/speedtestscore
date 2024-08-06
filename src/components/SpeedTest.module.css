@@ -1,0 +1,117 @@
+.circleContainer {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  background-color: #171923;
+  border-radius: 50%;
+  border: 4px solid #252f43;
+  margin: 50px auto;
+}
+
+.innerCircle {
+  position: absolute;
+  width: 270px;
+  height: 270px;
+  background-color: #242c3c;
+  border-radius: 50%;
+  top: 16%;
+  left: 16%;
+  border: 12px solid #1a202c;
+}
+
+.circularProgress {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block !important;
+}
+
+.circularLabel {
+  position: absolute;
+  color: white;
+  font-size: 1rem;
+}
+
+.labelTop {
+  top: -10%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.labelBottom {
+  bottom: 10px;
+  left: 10%;
+  transform: translateX(-50%);
+}
+
+.labelLeft {
+  top: 50%;
+  left: -10%;
+  transform: translateY(-50%);
+}
+
+.labelRight {
+  top: 50%;
+  right: -10%;
+  transform: translateY(-50%);
+}
+
+.labelBottomRight {
+  bottom: 10px;
+  right: 10px;
+}
+
+.testSettings {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: cyan;
+}
+
+/* Responsive sizes */
+@media (max-width: 1400px) {
+  .circleContainer {
+    width: 350px;
+    height: 350px;
+  }
+  .innerCircle {
+    width: 240px;
+    height: 240px;
+  }
+}
+
+@media (max-width: 1250px) {
+  .circleContainer {
+    width: 300px;
+    height: 300px;
+  }
+  .innerCircle {
+    width: 210px;
+    height: 210px;
+  }
+}
+
+@media (max-width: 768px) {
+  .circleContainer {
+    width: 250px;
+    height: 250px;
+  }
+  .innerCircle {
+    width: 175px;
+    height: 175px;
+  }
+}
+
+@media (max-width: 576px) {
+  .circleContainer {
+    width: 200px;
+    height: 200px;
+  }
+  .innerCircle {
+    width: 140px;
+    height: 140px;
+  }
+}
